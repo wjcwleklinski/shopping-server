@@ -1,3 +1,12 @@
 micronaut:
   application:
     name: shoppingService
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/shopping
+    driverClassName: org.postgresql.Driver
+    schema-generate: UPDATE
+jpa:
+  default:
+    entity-scan:
+      packages: com.wjcwleklinski.model
